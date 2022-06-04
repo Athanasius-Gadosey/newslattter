@@ -66,8 +66,11 @@ app.post('/failure', function(req, res){
 	res.redirect('/')
 })
 
-app.listen(process.env.PORT || 4000,'127.0.0.1');
+// app.listen(process.env.PORT || 4000,'127.0.0.1');
 
+app.listen(process.env.PORT || 4000, function(){
+	console.log('server runs on port 4000');
+});
 
 
 // API KEY
