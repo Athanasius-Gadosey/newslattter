@@ -20,7 +20,7 @@ app.post('/', function(req, res){
 	const firstName = req.body.firstName;
 	const lastName = req.body.lastName;
 
-	let data = {
+	const data = {
 		members: [
 			{
 				email_address: email,
@@ -66,7 +66,7 @@ app.post('/failure', function(req, res){
 	res.redirect('/')
 })
 
-app.listen(process.env.PORT || 2000,'127.0.0.1');
+app.listen(process.env.PORT || 4000,'127.0.0.1');
 
 
 
